@@ -84,6 +84,6 @@ async def send_email(request: SendEmailRequest):
     return {"id": send_message['id']}
 
 # Add a main block to run the server if needed
-# if __name__ == "__main__":
-#     import uvicorn
-#     uvicorn.run(app, host="0.0.0.0", port=8000)
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
